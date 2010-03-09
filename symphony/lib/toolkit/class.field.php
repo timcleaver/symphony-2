@@ -96,7 +96,7 @@
 		}
 
 		/**
-		 * Test whether this field supports data-soucre output grouping. This
+		 * Test whether this field supports data-source output grouping. This
 		 * default implementation prohibits grouping. Data-source grouping allows
 		 * clients of this field to group the xml output according to this field.
 		 * Subclasses should override this if grouping is supported.
@@ -245,7 +245,7 @@
 		 * @param string $field (optional)
 		 *	the name of the field to access the data for. This is optional and
 		 *	defaults to null in which case all fields are returned.
-		 * @return inull|mixed|array
+		 * @return null|mixed|array
 		 *	the value of the input field name if there is one, all the fields if
 		 *	the input field name was null, null if the input field was supplied but
 		 *	there is no value for that field.
@@ -327,11 +327,11 @@
 		 * @param array $data (optional)
 		 *	any existing data that has been supplied for this field instance.
 		 *	this is encoded as an array of columns, each column maps to an
-		 *	array of row indecies to the contents of that column. this defaults
+		 *	array of row indexes to the contents of that column. this defaults
 		 *	to null.
 		 * @param mixed $flagWithError (optional)
 		 *	flag with error? defaults to null.
-		 * @param string $fieldnamePrefix (optioinal)
+		 * @param string $fieldnamePrefix (optional)
 		 *	the string to be prepended to the display of the name of this field.
 		 *	this defaults to null.
 		 * @param string $fieldnameSuffix (optional)
@@ -345,10 +345,10 @@
 
 		/**
 		 * Test whether this field can be prepoulated with data. This default
-		 * implementation does not support prepopulation and, thus, returns false.
+		 * implementation does not support pre-population and, thus, returns false.
 		 *
 		 * @return boolean
-		 *	true if this can be prepopulated, false otherwise.
+		 *	true if this can be pre-populated, false otherwise.
 		 */
 		public function canPrePopulate(){
 			return false;
@@ -375,7 +375,7 @@
 		}
 
 		/**
-		 * Acessor to the parameter pool value of this. By default this returns
+		 * Accessor to the parameter pool value of this. By default this returns
 		 * the prepared table value of this.
 		 *
 		 * @param array $data
@@ -871,7 +871,7 @@
 		}
 
 		/**
-		 * Build the location select widget. This widget alows users to select
+		 * Build the location select widget. This widget allows users to select
 		 * whether this field will appear as main content or in the sidebar.
 		 *
 		 * @param string $selection (optional)
@@ -969,7 +969,7 @@
 
 		/**
 		 * Default implementation of record grouping. This default implementation
-		 * will trigger an error if used. THus, clients must overload this method
+		 * will trigger an error if used. Thus, clients must overload this method
 		 * for grouping to be successful.
 		 *
 		 * @param array $records
